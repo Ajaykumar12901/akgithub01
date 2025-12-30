@@ -15,6 +15,8 @@ jobs:
     name: terraform init
     runs-on: ubuntu-latest
     steps: 
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
       - name: print
         run: echo "hello world"
       - name: list files
