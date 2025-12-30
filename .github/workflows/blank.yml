@@ -1,0 +1,19 @@
+name: ajayworkflow
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #     - feature/*
+  # pull_request:
+  #   branches:
+  #     - main
+  #     - feature/*
+jobs:
+  ajaytest:
+    name: terraform init
+    runs-on: ubuntu-latest
+    steps: 
+      - name: print
+        run: echo "hello world"
