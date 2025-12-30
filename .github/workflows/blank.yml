@@ -17,3 +17,7 @@ jobs:
     steps: 
       - name: print
         run: echo "hello world"
+      - name: list files
+        run: ls
+      - name: read
+        run: cat main.tf
